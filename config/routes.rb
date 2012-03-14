@@ -1,4 +1,11 @@
 RailsForZombies::Application.routes.draw do
+  
+  root :to => 'zombies#index'
+
+  resources :tweets
+
+  resources :zombies
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
